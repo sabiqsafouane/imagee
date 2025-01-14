@@ -1,0 +1,69 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Gallery container */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for each figure */
+figure {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Default border */
+}
+
+figure:focus {
+    outline: none;
+    border: 2px solid #007bff; /* Blue border on focus */
+}
+
+/* Images inside figures */
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+figure:hover img {
+    transform: scale(1.05);
+}
+
+figure:focus img {
+    transform: scale(1.05);
+}
+
+/* Figcaption */
+figcaption {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Additional effects for accessibility */
+figcaption:focus {
+    color: #007bff;
+    font-weight: bold;
+}
